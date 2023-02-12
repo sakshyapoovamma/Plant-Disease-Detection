@@ -1,46 +1,52 @@
 # Plants-Disease-Detection-using-Tensorflow-and-OpenCV
-Implemented Machine Learning and Artificial Intelligence model to detect the different disease on plants using the images.
-
-
-# High Level Diagram:- 
-![Plant Disease HLD](https://user-images.githubusercontent.com/34335127/191258796-53691617-6168-4781-bf47-c58ef45f1e0c.png)
+Implemented Machine Learning and Artificial Intelligence model to detect the different types of diseases seen on plant leaves using the images.
 
 # Technology Stack
 - Python
 - Convolutional Neural Networks (CNN)
 - Machine Learning
-- AWS Cloud Service
 - Flask
 
-# Project Execution Video's :- 
-- Part 1 :- 
-
-https://user-images.githubusercontent.com/34335127/191261749-5ad620fc-c43e-4dba-a64b-2a447e02d84d.mp4
-
-- Part 2 :- 
-
-https://user-images.githubusercontent.com/34335127/191262827-1b255303-c054-4698-af8e-f469afc7436f.mp4
-# Screenshots of Application and Deployment :- 
-## 1) Code :-
-- ![Code](https://user-images.githubusercontent.com/34335127/191258769-8825e101-872c-4106-93fc-9ab56900b710.png)
-
-## 2) AWS Console :-
-- ![AWS Console SS](https://user-images.githubusercontent.com/34335127/191258738-70d28b6e-23b8-4fbe-bfba-0f0bb4e47ab3.png)
-
-## 3) Predication :-
-- ![Predicted](https://user-images.githubusercontent.com/34335127/191258817-494ed259-cddb-4b54-ac5a-7b0089bef4e5.png)
-
-
-# How to Use :-
-1). Use [PlantVillage Dataset](https://www.kaggle.com/emmarex/plantdisease) from kaggle.
-
-2) Clone [Plants-Disease-Detection-using-Tensorflow-and-OpenCV.git](https://github.com/cartosat/Plants-Disease-Detection-using-Tensorflow-and-OpenCV.git)
- - While cloning this repo please use `git-lfs` commands.
- - Learn More Link :- https://docs.gitlab.com/ee/topics/git/lfs/
-
-3) Use google colab to train model.
-
-4) Use google drive to mount dataset.
-
-5) Directory Structure of Dataset should be as follow:- 
-`My Drive/Colab Notebook/Plant Village/disease/<15 different directories obtained from extracting plant Village Dataset>`
+# VS Code Execution - Flask Application
+ -Create a virtual environment
+ - 'virtualenv -p python3.10 env'
+ 
+ - note: Only python version 3.10 and below support tensorflow
+ 
+ - Activate the virtualenv
+ - '.\env\Scripts\activate'
+ 
+ -If activated then install the required dependencies
+ 
+ -To install tensorflow run command
+ - 'pip install tensorflow'
+ 
+ -To install cv2 run command
+ - 'pip install opencv-python'
+ 
+ - Now open the directory which contains the flask application python file(In our case it is the Deployment directory
+ - Run command
+ - 'cd 'Deployment' '
+ 
+ -Now to run the flask app(app.py) run command
+ - 'python app.py'
+ 
+ -Click on the address of the local server where the application is hosted (https://127.0.0.1:5000) which redirects you to the server or copy the link and run it in any browser
+ 
+# Fetching Data from Kaggle on Google Colab
+ - Open the Kaggle fetch python notebook on Google Colab
+ - Mount your Google Drive on colab
+ - Give access to Colab when prompted to mount your google drive
+ - Download dataset from Kaggle's Plant Village directory
+ - Unzip the file onto your google drive
+ 
+# Building,Training and testing your ML model
+ - Open plant-disease-detection python notebook on Google Colab
+ - Mount your google drive
+ - Build your model
+ - Perform train-test split of 80%-20%
+ - Train your model
+ - Test the accuracy of the model
+ - Dump the model in the project folder using pickle
+ - Train your model
+ 
